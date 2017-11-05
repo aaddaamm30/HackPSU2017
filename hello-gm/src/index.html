@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>vroom-vroom</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <!-- Base css, but you'll likely want to keep them -->
@@ -9,7 +8,8 @@
 
     <!-- Your custom files -->
     <link rel="stylesheet" href="css/app.css" type="text/css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
     <script src="js/ngi.polyfill.min.js"></script>
     <script src="GMLIB/system.js"></script>
     <script src="GMLIB/info.js"></script>
@@ -25,19 +25,21 @@
 
   </head>
   <body>
-    <div id="wrapper">
-      <div id="close"><img src="images/close.png" onclick="gm.system.closeApp()" alt="close"></div>
-      <div id="main">
+    <div id="thingontop">
+      <div id="wrapper">
+        <div id="close"><img src="images/close.png" onclick="gm.system.closeApp()" alt="close"></div>
+        <div id="main">
 
-        <!-- Remove all code inside #main and add your own! -->
+          <!-- Remove all code inside #main and add your own! -->
 
-        <h1>Check Conditions</h1>
-        <div class="insturments">
-          <button id="weather_button"
-                  type="button"
-                  onclick="getWeather()">How Weather?
-          </button>
-          <div id="weatherInfo"></div>
+          <h1 class="title is-2">Check Conditions</h1>
+          <div class="section">
+            <a id="weather_button"
+              class="button is-large is-primary"
+              onclick="getWeather()">How Weather?
+            </a>
+            <div id="weatherInfo" class="is-large"></div>
+          </div>
         </div>
       </div>
     </div>
