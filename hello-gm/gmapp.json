@@ -1,0 +1,14 @@
+{
+  "name":"vroom-vroom",
+  "id":"95689618",
+  "template": "Blank",
+  "version": "0.0.0",
+  "src": "src",
+  "dist": "dist",
+  "main": "index.html",
+  "icon": "Icon.png",
+  "developer": "Adam Loo",
+  "category": "General",
+  "type": "RemoteHigh",
+  "description": "Generated on 2017-11-4 18:50:45 by ngi-sdk version "
+}
