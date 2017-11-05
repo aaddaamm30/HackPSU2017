@@ -31,7 +31,7 @@ function pullWeather(key){
   goget.get(newrl, function(response){
     var currentSky = JSON.parse(response);
     var lblDiv = document.getElementById('weatherInfo');
-    var newString = 'Its Fucking ';
+    var newString = 'It\'s frickin\' ';
     console.log(currentSky);
     console.log(currentSky[0].WeatherText);
     newString = newString.concat(currentSky[0].WeatherText);
@@ -77,6 +77,5 @@ function getPlaceKey(theURL){
 
 //main get/display function that runs on click of how weather button
 function getWeather(){
-
   gm.info.getCurrentPosition(mainWeather, true);
 }
